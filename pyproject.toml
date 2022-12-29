@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "shorten-url"
+version = "0.1.0"
+description = ""
+authors = ["maksym.valyn <maksym.valyn@starnavi.io>"]
+readme = "README.md"
+packages = [{include = "shorten_url"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.88.0"}
+shortuuid = "^1.0.11"
+redis = "^4.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
